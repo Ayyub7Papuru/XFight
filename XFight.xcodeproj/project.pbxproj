@@ -19,6 +19,8 @@
 		B1B63F2021E7BD550055FCF3 /* Mace.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B63F1F21E7BD550055FCF3 /* Mace.swift */; };
 		B1B63F2221E7BD810055FCF3 /* Dwarf.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B63F2121E7BD810055FCF3 /* Dwarf.swift */; };
 		B1B63F2421E7BDB10055FCF3 /* Axe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B63F2321E7BDB10055FCF3 /* Axe.swift */; };
+		B1B63F2821E7BF0B0055FCF3 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B63F2721E7BF0B0055FCF3 /* Player.swift */; };
+		B1B63F2A21E7BF7D0055FCF3 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B63F2921E7BF7D0055FCF3 /* Team.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +49,8 @@
 		B1B63F1F21E7BD550055FCF3 /* Mace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mace.swift; sourceTree = "<group>"; };
 		B1B63F2121E7BD810055FCF3 /* Dwarf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dwarf.swift; sourceTree = "<group>"; };
 		B1B63F2321E7BDB10055FCF3 /* Axe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Axe.swift; sourceTree = "<group>"; };
+		B1B63F2721E7BF0B0055FCF3 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		B1B63F2921E7BF7D0055FCF3 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				B1B63F2521E7BDDF0055FCF3 /* Characters */,
 				B1B63F0821E7B8850055FCF3 /* main.swift */,
 				B1B63F0F21E7B8A60055FCF3 /* Game.swift */,
+				B1B63F2721E7BF0B0055FCF3 /* Player.swift */,
+				B1B63F2921E7BF7D0055FCF3 /* Team.swift */,
 			);
 			path = XFight;
 			sourceTree = "<group>";
@@ -170,9 +176,11 @@
 			files = (
 				B1B63F1A21E7BCB90055FCF3 /* Warrior.swift in Sources */,
 				B1B63F1221E7BB440055FCF3 /* Character.swift in Sources */,
+				B1B63F2A21E7BF7D0055FCF3 /* Team.swift in Sources */,
 				B1B63F2421E7BDB10055FCF3 /* Axe.swift in Sources */,
 				B1B63F1421E7BB570055FCF3 /* Weapon.swift in Sources */,
 				B1B63F1C21E7BCF70055FCF3 /* InfiniteSword.swift in Sources */,
+				B1B63F2821E7BF0B0055FCF3 /* Player.swift in Sources */,
 				B1B63F2221E7BD810055FCF3 /* Dwarf.swift in Sources */,
 				B1B63F1E21E7BD230055FCF3 /* Colossus.swift in Sources */,
 				B1B63F2021E7BD550055FCF3 /* Mace.swift in Sources */,
