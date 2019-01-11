@@ -10,7 +10,9 @@ import Foundation
 
 class Game {
     
-    func start() {}
+    func start() {
+        print("Welcome to XFight, a game which confronts two players to the death. Each player have to create a team and choose 3 characters then fight for your life")
+    }
     
     
     func checkString() -> String {
@@ -27,7 +29,6 @@ class Game {
     var names = [String]()
     
     func getName() {
-        print("Hello and welcome to X Fight, its a game which confronts two players to the death")
         
         print("Please enter your name")
         if let playerName = readLine() {
@@ -56,44 +57,57 @@ class Game {
         
     }
     
-    var charctersName = [String]()
+    var charactersName = [String]()
     
     func chooseCharacter() {
-        var charactersName = " "
         var characters = [Character]()
+        var choice = 0
         
-        print("Please choose 3 characters within the fighters"
-            + "\n1. Magus"
-            + "\n2. Warrior"
-            + "\n3. Coloosus"
-            + "\n4. Dwarf")
-        let choice = checkInteger()
+        repeat{
+            
+            for i in 1..<4 {
+            print("Choose your character number \(i) within the fighters by entering number 1 to 4"
+                + "\n1. Magus"
+                + "\n2. Warrior"
+                + "\n3. Colossus"
+                + "\n4. Dwarf")
+            
+            choice = checkInteger()
+            
+           }
+
+        } while choice != 1 && choice != 2 && choice != 3 && choice != 4
         
         switch choice {
-
         case 1:
-            print("You have choosed the Magus")
+            let magus = Magus.init()
+            characters.append(magus)
         case 2:
-            print("The Warrior never surrender")
+            let warrior = Warrior.init()
+            characters.append(warrior)
         case 3:
-            print("The Colossus, a giant of clay")
+            let colossus = Colossus.init()
+            characters.append(colossus)
         case 4:
-            print("Well..good luck")
-            
+            let dwarf = Dwarf.init()
+            characters.append(dwarf)
         default:
             break
-            
         }
+    }
+
+    func nameCharacter() {
+        var charactersName = ""
+            
+            for i in 1..<3 {
+        print("Name your character \(i)")
         
-        print("Name your character")
         charactersName = checkString()
         
-        if charactersName.contains(charactersName) {
-            print("Name already taken")
-        } else {
-            charactersName.append(charactersName)
+        charactersName.append(charactersName)
         }
     
-    return
+
+
     }
 }
