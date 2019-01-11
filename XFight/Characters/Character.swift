@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 class Character {
     let charactersName: String
     var lifePoint: Int

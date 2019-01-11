@@ -9,12 +9,11 @@
 import Foundation
 
 class Team {
+    var characters = [Character]()
     var teamName: String
-    var characterName: String
     
-    init(teamName: String, characterName: String) {
+    init(teamName: String) {
         self.teamName = teamName
-        self.characterName = characterName
-        
     }
+  
 }

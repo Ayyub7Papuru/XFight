@@ -9,5 +9,7 @@
 import Foundation
 
 var game = Game()
+game.getName()
+
 
 

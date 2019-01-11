@@ -12,64 +12,88 @@ class Game {
     
     func start() {}
     
+    
+    func checkString() -> String {
+        guard let stringChoice = readLine() else { return String()}
+        return stringChoice
+    }
+    
+    func checkInteger() -> Int {
+        guard let input = readLine() else { return 0}
+        guard let intInput = Int(input) else { return 0}
+        return intInput
+    }
+    
+    var names = [String]()
+    
     func getName() {
         print("Hello and welcome to X Fight, its a game which confronts two players to the death")
         
-        print("Please enter the first player's name")
+        print("Please enter your name")
         if let playerName = readLine() {
             print("Welcome \(playerName)")
         }
     }
+    var teamNames = [Team]()
     
-    
-    var charac = ["Magus": 0, "Warrior": 1, "Colossus": 2, "Dwarf": 3]
-    func chooseCharacter() {
+    func createTeam() -> Team {
         
-        func checkString() -> String {
-            guard let choice = readLine() else { return String()}
-            return choice
+        var teamName = " "
+        
+        print("Please name your team")
+        
+        teamName = checkString()
+        
+        if teamName.contains(teamName) {
+            print("Choose another name")
+        } else {
+            teamName.append(teamName)
         }
         
-        var numberOfCharacters = 0
-        print("Please choose 3 characters"
-            + "\n1. Magus: powerfull healer"
-            + "\n2. Warrior: He never surrender"
-            + "\n3. Colossus: Giant with feet of clay"
-            + "\n4. Dwarf: Don't underestimate him")
-        
-        if let choice = readLine() {
-            switch choice {
-            case "1":
-                print("You have choosed the Magus")
-            case "2":
-                print("The Colossus have been choosed")
-            case "3":
-                print("The Warrior is yours now")
-            case "4":
-                print("Well..good luck")
-            default:
-                return
-            }
-        }
-        numberOfCharacters += 1
-        repeat {
-            if let choice = readLine() {
-                switch choice {
-                case "1":
-                    print("You have choosed the Magus")
-                case "2":
-                    print("The Colossus have been choosed")
-                case "3":
-                    print("The Warrior is yours now")
-                case "4":
-                    print("Well..good luck")
-                default:
-                    return
-                }
-            }
-        }while numberOfCharacters < 3
+        let myTeam = Team(teamName: teamName)
+        return myTeam
         
         
     }
     
+    var charctersName = [String]()
+    
+    func chooseCharacter() {
+        var charactersName = " "
+        var characters = [Character]()
+        
+        print("Please choose 3 characters within the fighters"
+            + "\n1. Magus"
+            + "\n2. Warrior"
+            + "\n3. Coloosus"
+            + "\n4. Dwarf")
+        let choice = checkInteger()
+        
+        switch choice {
+
+        case 1:
+            print("You have choosed the Magus")
+        case 2:
+            print("The Warrior never surrender")
+        case 3:
+            print("The Colossus, a giant of clay")
+        case 4:
+            print("Well..good luck")
+            
+        default:
+            break
+            
+        }
+        
+        print("Name your character")
+        charactersName = checkString()
+        
+        if charactersName.contains(charactersName) {
+            print("Name already taken")
+        } else {
+            charactersName.append(charactersName)
+        }
+    
+    return
+    }
 }
