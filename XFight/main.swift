@@ -10,10 +10,5 @@ import Foundation
 
 var game = Game()
 game.start()
-game.getName()
-game.createTeam()
-game.chooseCharacter()
-game.nameCharacter()
-
 
 

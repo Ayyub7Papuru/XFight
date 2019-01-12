@@ -99,7 +99,7 @@ class Game {
     func nameCharacter() {
         var charactersName = ""
             
-            for i in 1..<3 {
+            for i in 1..<4 {
         print("Name your character \(i)")
         
         charactersName = checkString()
@@ -110,4 +110,28 @@ class Game {
 
 
     }
+    
+    func attackEnnemi(ennemi: Character, attacker: Character) {
+        
+        if attacker.lifePoint > 0 {
+            if ennemi.lifePoint > 0 {
+                ennemi.lifePoint -= attacker.charactersArm.power
+                
+                print("\(attacker) launched an attack on \(ennemi) and made \(attacker.charactersArm.power) damages")
+                
+                if ennemi.lifePoint <= 0 {
+                    print("\(ennemi) is dead")
+                } else {
+                    print("Come on ! Fight !")
+                }
+            }
+            
+        }
+    }
+    
+    
+    
+    
+    
+  
 }
