@@ -111,27 +111,82 @@ class Game {
 
     }
     
-    func attackEnnemi(ennemi: Character, attacker: Character) {
+    
+    func chooseAttacker() {
+        var attacker = 0
+        var ennemy = 0
+        print("Please choose your fighter"
+            + "\n1. Magus"
+            + "\n2. Warrior"
+            + "\n3. Colossus"
+            + "\n4. Dwarf")
         
-        if attacker.lifePoint > 0 {
-            if ennemi.lifePoint > 0 {
-                ennemi.lifePoint -= attacker.charactersArm.power
-                
-                print("\(attacker) launched an attack on \(ennemi) and made \(attacker.charactersArm.power) damages")
-                
-                if ennemi.lifePoint <= 0 {
-                    print("\(ennemi) is dead")
-                } else {
-                    print("Come on ! Fight !")
-                }
-            }
+           attacker = checkInteger()
+        
+        switch attacker {
+        case 1:
+            let attacker = Magus.init()
+            print(" You choosed \(attacker)")
+        case 2:
+            let attacker = Warrior.init()
+            print(" You choosed \(attacker)")
+        case 3:
+            let attacker = Colossus.init()
+            print(" You choosed \(attacker)")
+        case 4:
+            let attacker = Dwarf.init()
+            print(" You choosed \(attacker)")
+        default:
+            break
+        }
+        
+        
+            print("Please choose the ennemy to attack"
+                + "\n1. Magus"
+                + "\n2. Warrior"
+                + "\n3. Colossus"
+                + "\n4. Dwarf")
+            
+          ennemy = checkInteger()
+        
+        switch ennemy {
+        case 1:
+            let ennemy = Magus.init()
+            print(" You choosed \(ennemy)")
+            
+        case 2:
+            let ennemy = Warrior.init()
+            print(" You choosed \(ennemy)")
+        case 3:
+            let ennemy = Colossus.init()
+            print(" You choosed \(ennemy)")
+        case 4:
+            let ennemy = Dwarf.init()
+            print(" You choosed \(ennemy)")
+        default:
+            break
             
         }
+
     }
-    
-    
-    
-    
-    
-  
+        
+        func attackEnnemi(attacker: Character, ennemy: Character) {
+            
+            if attacker.lifePoint > 0 {
+                if ennemy.lifePoint > 0 {
+                    ennemy.lifePoint -= attacker.charactersArm.power
+                    
+                    print("\(attacker) launched an attack on \(ennemy) and made \(attacker.charactersArm.power) damages")
+                    
+                    if ennemy.lifePoint <= 0 {
+                        print("\(ennemy) is dead")
+                    } else {
+                        print("Come on ! Fight !")
+                    }
+                }
+                
+            }
+        }
+        
 }
+
