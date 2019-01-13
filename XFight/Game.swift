@@ -187,6 +187,52 @@ class Game {
                 
             }
         }
+    
+    func magicChest(characters: Character) {
+        var randomChest = Int.random(in: 0..<6)
+    
+        repeat{
+            
+        print("Lucky you !!, choose a number between 1 and 4")
+        randomChest = checkInteger()
         
+        } while randomChest != 1 && randomChest != 2 && randomChest != 3 && randomChest != 4
+        
+        switch randomChest {
+        case 1:
+            print("Congratulation you found the Sword of Eternity !")
+            characters.charactersArm = SwordOfEternity()
+        case 2:
+            print(" You recieved a source of pure water")
+            characters.lifePoint += 30
+        case 3:
+            print("A present from the ghost of sparte, the legendary Leviathan")
+            characters.charactersArm = LegendaryLeviathan()
+        case 4:
+           print("Sorry nothing for you bruh")
+        case 5:
+            print("WONDERFULL !! You got the Suprem Scepter Of Time. It allows you to increase your power but you'll pay with your life")
+            characters.charactersArm = SupermScepterOfTime()
+            characters.lifePoint -= 17
+            
+            if characters.lifePoint <= 0 {
+                print("You didn't had enough power to control the Suprem Scepter Of Time, sorry but you're dead")
+                
+            }
+        case 6:
+            let ennemy = Colossus.init()
+            print("You found a Supra Laser killer of Giants")
+            if ennemy.lifePoint > 0 {
+                ennemy.lifePoint -= 100
+            }
+            if ennemy.lifePoint <= 0 {
+                print("The Supra Laser is so effective !!! the Colossus is dead")
+            }
+            
+        default:
+            break
+            
+        }
+        
+    }
 }
-

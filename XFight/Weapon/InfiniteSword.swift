@@ -10,6 +10,6 @@ import Foundation
 
 class InfiniteSword: Weapon {
     init() {
-        super.init(name: "InfiniteSword", power: 52)
+        super.init(name: "Infinite Sword", power: 52)
     }
 }
