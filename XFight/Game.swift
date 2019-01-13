@@ -9,10 +9,11 @@
 import Foundation
 
 class Game {
+    var names = [String]()
+    var teamNames = [Team]()
+    var charactersName = [String]()
     
-    func start() {
-        print("Welcome to XFight, a game which confronts two players to the death. Each player have to create a team and choose 3 characters then fight for your life")
-    }
+    func start() {}
     
     
     func checkString() -> String {
@@ -26,16 +27,12 @@ class Game {
         return intInput
     }
     
-    var names = [String]()
-    
     func getName() {
-        
         print("Please enter your name")
         if let playerName = readLine() {
-            print("Welcome \(playerName)")
+        print("Welcome \(playerName)")
         }
     }
-    var teamNames = [Team]()
     
     func createTeam() -> Team {
         
@@ -57,15 +54,16 @@ class Game {
         
     }
     
-    var charactersName = [String]()
     
     func chooseCharacter() {
         var characters = [Character]()
         var choice = 0
+        var charactersName = ""
         
+     
         repeat{
             
-            for i in 1..<4 {
+            for i in 1...3 {
             print("Choose your character number \(i) within the fighters by entering number 1 to 4"
                 + "\n1. Magus"
                 + "\n2. Warrior"
@@ -80,35 +78,28 @@ class Game {
         
         switch choice {
         case 1:
-            let magus = Magus.init()
+            let magus = Magus()
             characters.append(magus)
         case 2:
-            let warrior = Warrior.init()
+            let warrior = Warrior()
             characters.append(warrior)
         case 3:
-            let colossus = Colossus.init()
+            let colossus = Colossus()
             characters.append(colossus)
         case 4:
-            let dwarf = Dwarf.init()
+            let dwarf = Dwarf()
             characters.append(dwarf)
         default:
             break
         }
-    }
-
-    func nameCharacter() {
-        var charactersName = ""
+        
+        for i in 1...3 {
+            print("Name your character \(i)")
             
-            for i in 1..<4 {
-        print("Name your character \(i)")
-        
-        charactersName = checkString()
-        
-        charactersName.append(charactersName)
+            charactersName = checkString()
+            
+            charactersName.append(charactersName)
         }
-    
-
-
     }
     
     
@@ -125,16 +116,16 @@ class Game {
         
         switch attacker {
         case 1:
-            let attacker = Magus.init()
+            let attacker = Magus()
             print(" You choosed \(attacker)")
         case 2:
-            let attacker = Warrior.init()
+            let attacker = Warrior()
             print(" You choosed \(attacker)")
         case 3:
-            let attacker = Colossus.init()
+            let attacker = Colossus()
             print(" You choosed \(attacker)")
         case 4:
-            let attacker = Dwarf.init()
+            let attacker = Dwarf()
             print(" You choosed \(attacker)")
         default:
             break
@@ -151,17 +142,17 @@ class Game {
         
         switch ennemy {
         case 1:
-            let ennemy = Magus.init()
+            let ennemy = Magus()
             print(" You choosed \(ennemy)")
             
         case 2:
-            let ennemy = Warrior.init()
+            let ennemy = Warrior()
             print(" You choosed \(ennemy)")
         case 3:
-            let ennemy = Colossus.init()
+            let ennemy = Colossus()
             print(" You choosed \(ennemy)")
         case 4:
-            let ennemy = Dwarf.init()
+            let ennemy = Dwarf()
             print(" You choosed \(ennemy)")
         default:
             break
@@ -169,31 +160,14 @@ class Game {
         }
 
     }
-        
-        func attackEnnemi(attacker: Character, ennemy: Character) {
-            
-            if attacker.lifePoint > 0 {
-                if ennemy.lifePoint > 0 {
-                    ennemy.lifePoint -= attacker.charactersArm.power
-                    
-                    print("\(attacker) launched an attack on \(ennemy) and made \(attacker.charactersArm.power) damages")
-                    
-                    if ennemy.lifePoint <= 0 {
-                        print("\(ennemy) is dead")
-                    } else {
-                        print("Come on ! Fight !")
-                    }
-                }
-                
-            }
-        }
+    
     
     func magicChest(characters: Character) {
         var randomChest = Int.random(in: 0..<6)
     
         repeat{
             
-        print("Lucky you !!, choose a number between 1 and 4")
+        print("Lucky you !!, choose a number between 1 and 4 and open the magic Chest")
         randomChest = checkInteger()
         
         } while randomChest != 1 && randomChest != 2 && randomChest != 3 && randomChest != 4
@@ -220,7 +194,7 @@ class Game {
                 
             }
         case 6:
-            let ennemy = Colossus.init()
+            let ennemy = Colossus()
             print("You found a Supra Laser killer of Giants")
             if ennemy.lifePoint > 0 {
                 ennemy.lifePoint -= 100
@@ -233,6 +207,11 @@ class Game {
             break
             
         }
+        
+    }
+    
+    func welcome() {
+        print("Welcome to XFight, a game which confronts two players to the death. Each player have to create a team and choose 3 characters then fight for your life")
         
     }
 }

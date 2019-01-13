@@ -24,8 +24,18 @@ class Character {
         if lifePoint > 0 {
             if ennemy.lifePoint > 0 {
                 ennemy.lifePoint -= charactersArm.power
+                
+                print("\(charactersName) launched an attack on \(ennemy) and made \(charactersArm.power) damages")
+                
+                if ennemy.lifePoint <= 0 {
+                    print("\(ennemy) is dead")
+                } else {
+                    print("Come on ! Fight !")
+                }
             }
             
         }
+            
+        }
     }
-}
+
