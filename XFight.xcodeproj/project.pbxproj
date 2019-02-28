@@ -19,11 +19,17 @@
 		B1B63F2021E7BD550055FCF3 /* Mace.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B63F1F21E7BD550055FCF3 /* Mace.swift */; };
 		B1B63F2221E7BD810055FCF3 /* Dwarf.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B63F2121E7BD810055FCF3 /* Dwarf.swift */; };
 		B1B63F2421E7BDB10055FCF3 /* Axe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B63F2321E7BDB10055FCF3 /* Axe.swift */; };
-		B1B63F2821E7BF0B0055FCF3 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B63F2721E7BF0B0055FCF3 /* Player.swift */; };
 		B1B63F2A21E7BF7D0055FCF3 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B63F2921E7BF7D0055FCF3 /* Team.swift */; };
+		B1C6FBE52226E0A30077AB3B /* Bandage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C6FBE42226E0A30077AB3B /* Bandage.swift */; };
+		B1C6FBE72226E0C40077AB3B /* FromSky.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C6FBE62226E0C40077AB3B /* FromSky.swift */; };
+		B1C6FBE92226F97C0077AB3B /* Mana.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C6FBE82226F97C0077AB3B /* Mana.swift */; };
+		B1C6FBEB2226F9F50077AB3B /* InfinityStone.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C6FBEA2226F9F50077AB3B /* InfinityStone.swift */; };
+		B1C6FBED2226FB090077AB3B /* Peacekeeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C6FBEC2226FB090077AB3B /* Peacekeeper.swift */; };
+		B1C6FBEF2226FB8E0077AB3B /* FloralRemedy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C6FBEE2226FB8E0077AB3B /* FloralRemedy.swift */; };
+		B1DB475C2200995F00D5AA3D /* TeamFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DB475B2200995F00D5AA3D /* TeamFactory.swift */; };
 		B1F2AB5621EAB8F200353C1B /* SwordOfEternity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F2AB5521EAB8F200353C1B /* SwordOfEternity.swift */; };
 		B1F2AB5821EABB6C00353C1B /* LengendaryLeviathan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F2AB5721EABB6C00353C1B /* LengendaryLeviathan.swift */; };
-		B1F2AB5A21EABC8500353C1B /* SupermScepterOfTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F2AB5921EABC8500353C1B /* SupermScepterOfTime.swift */; };
+		B1F2AB5A21EABC8500353C1B /* SupremScepterOfTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F2AB5921EABC8500353C1B /* SupremScepterOfTime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,11 +58,17 @@
 		B1B63F1F21E7BD550055FCF3 /* Mace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mace.swift; sourceTree = "<group>"; };
 		B1B63F2121E7BD810055FCF3 /* Dwarf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dwarf.swift; sourceTree = "<group>"; };
 		B1B63F2321E7BDB10055FCF3 /* Axe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Axe.swift; sourceTree = "<group>"; };
-		B1B63F2721E7BF0B0055FCF3 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		B1B63F2921E7BF7D0055FCF3 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		B1C6FBE42226E0A30077AB3B /* Bandage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bandage.swift; sourceTree = "<group>"; };
+		B1C6FBE62226E0C40077AB3B /* FromSky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromSky.swift; sourceTree = "<group>"; };
+		B1C6FBE82226F97C0077AB3B /* Mana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mana.swift; sourceTree = "<group>"; };
+		B1C6FBEA2226F9F50077AB3B /* InfinityStone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfinityStone.swift; sourceTree = "<group>"; };
+		B1C6FBEC2226FB090077AB3B /* Peacekeeper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peacekeeper.swift; sourceTree = "<group>"; };
+		B1C6FBEE2226FB8E0077AB3B /* FloralRemedy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloralRemedy.swift; sourceTree = "<group>"; };
+		B1DB475B2200995F00D5AA3D /* TeamFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamFactory.swift; sourceTree = "<group>"; };
 		B1F2AB5521EAB8F200353C1B /* SwordOfEternity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwordOfEternity.swift; sourceTree = "<group>"; };
 		B1F2AB5721EABB6C00353C1B /* LengendaryLeviathan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LengendaryLeviathan.swift; sourceTree = "<group>"; };
-		B1F2AB5921EABC8500353C1B /* SupermScepterOfTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupermScepterOfTime.swift; sourceTree = "<group>"; };
+		B1F2AB5921EABC8500353C1B /* SupremScepterOfTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupremScepterOfTime.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,12 +101,13 @@
 		B1B63F0721E7B8850055FCF3 /* XFight */ = {
 			isa = PBXGroup;
 			children = (
+				B1C6FBE32226E0820077AB3B /* FromSky */,
 				B1B63F2621E7BDFC0055FCF3 /* Weapon */,
 				B1B63F2521E7BDDF0055FCF3 /* Characters */,
 				B1B63F0821E7B8850055FCF3 /* main.swift */,
 				B1B63F0F21E7B8A60055FCF3 /* Game.swift */,
-				B1B63F2721E7BF0B0055FCF3 /* Player.swift */,
 				B1B63F2921E7BF7D0055FCF3 /* Team.swift */,
+				B1DB475B2200995F00D5AA3D /* TeamFactory.swift */,
 			);
 			path = XFight;
 			sourceTree = "<group>";
@@ -121,9 +134,22 @@
 				B1B63F2321E7BDB10055FCF3 /* Axe.swift */,
 				B1F2AB5521EAB8F200353C1B /* SwordOfEternity.swift */,
 				B1F2AB5721EABB6C00353C1B /* LengendaryLeviathan.swift */,
-				B1F2AB5921EABC8500353C1B /* SupermScepterOfTime.swift */,
+				B1F2AB5921EABC8500353C1B /* SupremScepterOfTime.swift */,
 			);
 			path = Weapon;
+			sourceTree = "<group>";
+		};
+		B1C6FBE32226E0820077AB3B /* FromSky */ = {
+			isa = PBXGroup;
+			children = (
+				B1C6FBE62226E0C40077AB3B /* FromSky.swift */,
+				B1C6FBE42226E0A30077AB3B /* Bandage.swift */,
+				B1C6FBE82226F97C0077AB3B /* Mana.swift */,
+				B1C6FBEA2226F9F50077AB3B /* InfinityStone.swift */,
+				B1C6FBEC2226FB090077AB3B /* Peacekeeper.swift */,
+				B1C6FBEE2226FB8E0077AB3B /* FloralRemedy.swift */,
+			);
+			path = FromSky;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,14 +211,19 @@
 			files = (
 				B1B63F1A21E7BCB90055FCF3 /* Warrior.swift in Sources */,
 				B1B63F1221E7BB440055FCF3 /* Character.swift in Sources */,
+				B1C6FBED2226FB090077AB3B /* Peacekeeper.swift in Sources */,
 				B1B63F2A21E7BF7D0055FCF3 /* Team.swift in Sources */,
-				B1F2AB5A21EABC8500353C1B /* SupermScepterOfTime.swift in Sources */,
+				B1F2AB5A21EABC8500353C1B /* SupremScepterOfTime.swift in Sources */,
 				B1B63F2421E7BDB10055FCF3 /* Axe.swift in Sources */,
+				B1DB475C2200995F00D5AA3D /* TeamFactory.swift in Sources */,
 				B1B63F1421E7BB570055FCF3 /* Weapon.swift in Sources */,
+				B1C6FBE92226F97C0077AB3B /* Mana.swift in Sources */,
 				B1B63F1C21E7BCF70055FCF3 /* InfiniteSword.swift in Sources */,
-				B1B63F2821E7BF0B0055FCF3 /* Player.swift in Sources */,
+				B1C6FBE72226E0C40077AB3B /* FromSky.swift in Sources */,
 				B1B63F2221E7BD810055FCF3 /* Dwarf.swift in Sources */,
 				B1B63F1E21E7BD230055FCF3 /* Colossus.swift in Sources */,
+				B1C6FBE52226E0A30077AB3B /* Bandage.swift in Sources */,
+				B1C6FBEF2226FB8E0077AB3B /* FloralRemedy.swift in Sources */,
 				B1F2AB5821EABB6C00353C1B /* LengendaryLeviathan.swift in Sources */,
 				B1F2AB5621EAB8F200353C1B /* SwordOfEternity.swift in Sources */,
 				B1B63F2021E7BD550055FCF3 /* Mace.swift in Sources */,
@@ -200,6 +231,7 @@
 				B1B63F0921E7B8850055FCF3 /* main.swift in Sources */,
 				B1B63F1821E7BC7B0055FCF3 /* Scepter.swift in Sources */,
 				B1B63F1021E7B8A60055FCF3 /* Game.swift in Sources */,
+				B1C6FBEB2226F9F50077AB3B /* InfinityStone.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

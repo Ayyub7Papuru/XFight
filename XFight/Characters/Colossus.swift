@@ -9,7 +9,8 @@
 import Foundation
 
 class Colossus: Character {
-    init() {
+    
+    init(name: String) {
         super.init(charactersName: "Colossus", lifePoint: 150, charactersArm: Mace())
     }
 }

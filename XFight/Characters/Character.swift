@@ -14,11 +14,27 @@ class Character {
     var lifePoint: Int
     var charactersArm: Weapon
     
+    
     init (charactersName: String, lifePoint: Int, charactersArm: Weapon) {
         self.lifePoint = lifePoint
         self.charactersName = charactersName
         self.charactersArm = charactersArm
+    
     }
+    
+    func characterDescription() {
+                
+        print("")
+        
+        if lifePoint < 0 {
+            print("Statistics: LifePoint: \(lifePoint)"
+            + "\n. Power: \(charactersArm.power)")
+            
+        } else {
+            print("\(charactersName) + Is dead")
+        }
+    }
+
     
     func attackTheEnnemi(ennemy: Character) {
         if lifePoint > 0 {
@@ -36,6 +52,7 @@ class Character {
             
         }
             
-        }
     }
+}
+
 

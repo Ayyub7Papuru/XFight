@@ -10,10 +10,17 @@ import Foundation
 
 class Team {
     var characters = [Character]()
-    var teamName: String
+    let teamName: String
     
     init(teamName: String) {
         self.teamName = teamName
+    }
+    
+    func teamDescription() {
+        
+        for character in characters {
+            character.characterDescription()
+        }
     }
   
 }

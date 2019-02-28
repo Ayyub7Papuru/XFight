@@ -9,7 +9,7 @@
 import Foundation
 
 class Weapon {
-    var name: String
+    let name: String
     var power: Int
     
     init(name: String, power: Int) {

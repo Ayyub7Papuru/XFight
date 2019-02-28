@@ -8,7 +8,7 @@
 
 import Foundation
 
-class SupermScepterOfTime: Weapon {
+class SupremScepterOfTime: Weapon {
     
     init() {
         super.init(name: "Suprem Scepter Of Time", power: 97)
