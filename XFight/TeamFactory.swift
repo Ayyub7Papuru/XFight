@@ -29,13 +29,16 @@ class TeamFactory {
     func uniqueCharacterName() -> String {
         
         repeat {
-            
+            print("")
+            print("Name your Character")
             let uniqueCharacterName = checkString()
             if uniqueCharactersNames.contains(uniqueCharacterName) {
+                print("")
                 print("Please choose anaother name")
             } else {
                 uniqueCharactersNames.append(uniqueCharacterName)
-                print("Your character's name is \(uniqueCharacterName) now")
+                print("")
+                print("Your character's name is" + " " + uniqueCharacterName + " " + "now")
             }
             
             return uniqueCharacterName
@@ -44,12 +47,16 @@ class TeamFactory {
     
     func uniqueTeamName() -> String {
         repeat {
+            print("")
+            print("Please name your team")
             let uniqueTeamName = checkString()
             if uniqueTeamNames.contains(uniqueTeamName) {
+                print("")
                 print("Please choose anaother name")
             } else {
                 uniqueTeamNames.append(uniqueTeamName)
-                print("Your team's name is \(uniqueTeamName) now")
+                print("")
+                print("Your team's name is" + " " + uniqueTeamName + " " + "now")
             }
             
             return uniqueTeamName
@@ -59,7 +66,7 @@ class TeamFactory {
     }
     func createCharacter() -> Character? {
         var choice = 0
-        
+        print("")
         print("Choose your character within the fighters by entering number 1 to 4"
             + "\n1. Magus"
             + "\n2. Warrior"

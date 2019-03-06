@@ -15,12 +15,11 @@ class Team {
     init(teamName: String) {
         self.teamName = teamName
     }
-    
+  
     func teamDescription() {
         
         for character in characters {
             character.characterDescription()
         }
     }
-  
 }

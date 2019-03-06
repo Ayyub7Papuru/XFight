@@ -11,6 +11,6 @@ import Foundation
 class Dwarf: Character {
     
     init(name: String) {
-        super.init(charactersName: "Dwarf", lifePoint: 39, charactersArm: Axe())
+        super.init(charactersName: name, lifePoint: 39, charactersArm: Axe())
     }
 }
