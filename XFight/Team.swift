@@ -18,8 +18,31 @@ class Team {
   
     func teamDescription() {
         
-        for character in characters {
-            character.characterDescription()
+        for i in 0..<characters.count {
+            
+            let character = characters[i]
+            if character.lifePoint == 0 {
+                print("")
+                print("\(i + 1) " + character.charactersName + " Is dead !")
+                print("")
+            } else {
+                 character.characterDescription(index: i)
+            }
+           
         }
     }
+    
+    func isDead() -> Bool {
+        var isDead = false
+        
+        for character in characters {
+            if character.lifePoint <= 0 {
+                isDead = true
+            } else {
+                return false
+            }
+        }
+        return isDead
+    }
+
 }

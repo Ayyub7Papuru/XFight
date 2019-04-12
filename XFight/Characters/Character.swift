@@ -12,26 +12,23 @@ import Foundation
 class Character {
     let charactersName: String
     var lifePoint: Int
+    let lifepointLimit: Int
     var charactersArm: Weapon
     
     
     init (charactersName: String, lifePoint: Int, charactersArm: Weapon) {
         self.lifePoint = lifePoint
+        self.lifepointLimit = lifePoint
         self.charactersName = charactersName
         self.charactersArm = charactersArm
         
     }
     
-    func characterDescription() {
+    func characterDescription(index: Int) {
+        
         print("")
-        for i in 0..<1 {
-            if lifePoint > 0 {
-                print("\(i + 1) " + "Statistics: Name: \(charactersName)" + " " + "LifePoint: \(lifePoint)" + " " + "Power: \(charactersArm.power)")
-                
-            } else {
-                print("\(charactersName)  Is dead")
-            }
-        }
+        print("\(index + 1) " + "Statistics: Name: \(charactersName)" + " " + "LifePoint: \(lifePoint)" + " " + "Power: \(charactersArm.power)")
+        
     }
     
     func attackTheEnnemi(ennemy: Character) {
@@ -39,13 +36,13 @@ class Character {
             if ennemy.lifePoint > 0 {
                 ennemy.lifePoint -= charactersArm.power
                 print("")
-               print("\(charactersName)  launched an attack on  \(ennemy)  and made  \(charactersArm.power)  damages")
+               print("\(charactersName)  launched an attack on  \(ennemy.charactersName)  and made  \(charactersArm.power)  damages")
                 
                 if ennemy.lifePoint <= 0 {
                     print("")
-                    print("\(ennemy) is dead")
+                    print("\(ennemy.charactersName) is dead")
+                    ennemy.lifePoint = 0
                 } else {
-                    print("")
                     print("")
                     print("Come on ! Fight !")
                 }

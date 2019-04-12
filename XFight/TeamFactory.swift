@@ -27,12 +27,15 @@ class TeamFactory {
         return intInput
     }
     func uniqueCharacterName() -> String {
-        
+        var uniqueCharacterName = ""
         repeat {
+            
+            
             print("")
             print("Name your Character")
-            let uniqueCharacterName = checkString()
+            uniqueCharacterName = checkString()
             if uniqueCharactersNames.contains(uniqueCharacterName) {
+                uniqueCharacterName = ""
                 print("")
                 print("Please choose anaother name")
             } else {
@@ -41,8 +44,9 @@ class TeamFactory {
                 print("Your character's name is" + " " + uniqueCharacterName + " " + "now")
             }
             
-            return uniqueCharacterName
-        } while uniqueCharactersNames.contains(uniqueCharacterName())
+            
+        } while uniqueCharacterName == ""
+        return uniqueCharacterName
     }
     
     func uniqueTeamName() -> String {
@@ -107,9 +111,8 @@ class TeamFactory {
         for _ in 0..<numberOfCharacter {
             if let character = createCharacter() {
                 characters.append(character)
-            }
+            } 
         }
-        
         
         
         return characters
@@ -131,16 +134,15 @@ class TeamFactory {
         for _ in 0..<2 {
             let team  = createTeam()
             teams.append(team)
-        
+            
         }
-    
-    
-    
+        
+        
+        
     }
-        
-        
+    
+    
     //  print(" You recieved a source of pure water")
     //characters.lifePoint += 30 //Remplacer par arme
 }
-
 

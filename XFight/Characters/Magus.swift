@@ -16,8 +16,12 @@ class Magus: Character {
     
     func healing(friend: Character) {
         if lifePoint >= 0 {
-            friend.lifePoint += 40
-            print("\(charactersName) has healed \(friend), he is now op to keep fighting")
+            friend.lifePoint += charactersArm.power
+            print("\(charactersName) has healed \(friend.charactersName), he is now op to keep fighting")
+            
+            if friend.lifePoint > friend.lifepointLimit {
+                friend.lifePoint = friend.lifepointLimit
+            }
         } else {
             print("Sorry but your magus is OUT ")
         }

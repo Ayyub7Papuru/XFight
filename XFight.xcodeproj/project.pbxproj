@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B1B63F0921E7B8850055FCF3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B63F0821E7B8850055FCF3 /* main.swift */; };
-		B1B63F1021E7B8A60055FCF3 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B63F0F21E7B8A60055FCF3 /* Game.swift */; };
 		B1B63F1221E7BB440055FCF3 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B63F1121E7BB440055FCF3 /* Character.swift */; };
 		B1B63F1421E7BB570055FCF3 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B63F1321E7BB570055FCF3 /* Weapon.swift */; };
 		B1B63F1621E7BC3B0055FCF3 /* Magus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B63F1521E7BC3B0055FCF3 /* Magus.swift */; };
@@ -26,6 +25,7 @@
 		B1C6FBEB2226F9F50077AB3B /* InfinityStone.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C6FBEA2226F9F50077AB3B /* InfinityStone.swift */; };
 		B1C6FBED2226FB090077AB3B /* Peacekeeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C6FBEC2226FB090077AB3B /* Peacekeeper.swift */; };
 		B1C6FBEF2226FB8E0077AB3B /* FloralRemedy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C6FBEE2226FB8E0077AB3B /* FloralRemedy.swift */; };
+		B1CE8C83226101E800029CB8 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CE8C82226101E700029CB8 /* Game.swift */; };
 		B1DB475C2200995F00D5AA3D /* TeamFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DB475B2200995F00D5AA3D /* TeamFactory.swift */; };
 		B1F2AB5621EAB8F200353C1B /* SwordOfEternity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F2AB5521EAB8F200353C1B /* SwordOfEternity.swift */; };
 		B1F2AB5821EABB6C00353C1B /* LengendaryLeviathan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F2AB5721EABB6C00353C1B /* LengendaryLeviathan.swift */; };
@@ -47,7 +47,6 @@
 /* Begin PBXFileReference section */
 		B1B63F0521E7B8850055FCF3 /* XFight */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = XFight; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1B63F0821E7B8850055FCF3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		B1B63F0F21E7B8A60055FCF3 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		B1B63F1121E7BB440055FCF3 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		B1B63F1321E7BB570055FCF3 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
 		B1B63F1521E7BC3B0055FCF3 /* Magus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magus.swift; sourceTree = "<group>"; };
@@ -65,6 +64,7 @@
 		B1C6FBEA2226F9F50077AB3B /* InfinityStone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfinityStone.swift; sourceTree = "<group>"; };
 		B1C6FBEC2226FB090077AB3B /* Peacekeeper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peacekeeper.swift; sourceTree = "<group>"; };
 		B1C6FBEE2226FB8E0077AB3B /* FloralRemedy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloralRemedy.swift; sourceTree = "<group>"; };
+		B1CE8C82226101E700029CB8 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		B1DB475B2200995F00D5AA3D /* TeamFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamFactory.swift; sourceTree = "<group>"; };
 		B1F2AB5521EAB8F200353C1B /* SwordOfEternity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwordOfEternity.swift; sourceTree = "<group>"; };
 		B1F2AB5721EABB6C00353C1B /* LengendaryLeviathan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LengendaryLeviathan.swift; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 				B1B63F2621E7BDFC0055FCF3 /* Weapon */,
 				B1B63F2521E7BDDF0055FCF3 /* Characters */,
 				B1B63F0821E7B8850055FCF3 /* main.swift */,
-				B1B63F0F21E7B8A60055FCF3 /* Game.swift */,
+				B1CE8C82226101E700029CB8 /* Game.swift */,
 				B1B63F2921E7BF7D0055FCF3 /* Team.swift */,
 				B1DB475B2200995F00D5AA3D /* TeamFactory.swift */,
 			);
@@ -230,8 +230,8 @@
 				B1B63F1621E7BC3B0055FCF3 /* Magus.swift in Sources */,
 				B1B63F0921E7B8850055FCF3 /* main.swift in Sources */,
 				B1B63F1821E7BC7B0055FCF3 /* Scepter.swift in Sources */,
-				B1B63F1021E7B8A60055FCF3 /* Game.swift in Sources */,
 				B1C6FBEB2226F9F50077AB3B /* InfinityStone.swift in Sources */,
+				B1CE8C83226101E800029CB8 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
